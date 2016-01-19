@@ -1,10 +1,12 @@
 {
   "name": "electron-tap",
+  "bin": "./bin/electron-tap",
   "main": "index.js",
   "dependencies": {
+    "babel-register": "^6.4.3",
     "electron-prebuilt": "^0.36.4",
     "glob": "^6.0.4",
-    "tap-out": "^1.4.1",
-    "tape": "^4.4.0"
+    "glob-watcher": "^2.0.0",
+    "tap-out": "^1.4.1"
   }
 }
