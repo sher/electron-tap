@@ -1,8 +1,7 @@
 # electron-tape
 Electron test runner for Tape
 
-![tape](http://github.com/tundrax/electron-tape/raw/images/electron-tape-demo.gif)
-
+![electron-tape](https://raw.githubusercontent.com/tundrax/electron-tape/master/images/electron-tape-demo.gif)
 ## Installation
 ```bash
 $ cd your-project
