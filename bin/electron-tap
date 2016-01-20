@@ -8,7 +8,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var browserGlob = argv.browser;
 var rendererGlob = argv.renderer;
 
-var child = spawn(resolvePath(__dirname, '../node_modules/.bin/electron'), [
+var child = spawn(require.resolve('.bin/electron'), [
   // '--enable-logging',
   resolvePath(__dirname, '../'),
   '--browser', browserGlob,
