@@ -1,11 +1,11 @@
-# electron-tape
+# electron-tap
 Electron test runner for Tape
 
-![electron-tape](https://raw.githubusercontent.com/tundrax/electron-tape/master/images/electron-tape-demo.gif)
+![electron-tap](https://raw.githubusercontent.com/tundrax/electron-tap/master/images/demo.gif)
 ## Installation
 ```bash
 $ cd your-project
-$ npm i --save-dev tape electron-tape
+$ npm i --save-dev tape electron-tap
 ```
 ## Usage
 Define a new script in your `package.json`.
@@ -13,7 +13,7 @@ Define a new script in your `package.json`.
 ```js
 // ...
 "scripts": {
-  "test:renderer": "electron-tape --renderer 'test/**/renderer/*test.js?(x)'"
+  "test:renderer": "electron-tap --renderer 'test/**/renderer/*test.js?(x)'"
 }
 ```
 As an example we will test a React component.
@@ -21,7 +21,7 @@ Create a new test file in directory `test/renderer/Dummy-test.jsx`.
 ```jsx
 // Dummy-test.jsx
 import test from 'tape';
-import reporter from 'electron-tape/reporter';
+import reporter from 'electron-tap/reporter';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
