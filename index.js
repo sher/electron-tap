@@ -19,6 +19,7 @@ app.on('ready', function onReady() {
   win.loadURL(path.join('file://', __dirname, 'index.html'));
 
   win.webContents.on('did-finish-load', function onDidFinishLoad() {
+    win.openDevTools();
     browserRunner(browserGlob);
     win.webContents.send('run', rendererGlob);
   });

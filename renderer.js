@@ -20,6 +20,8 @@ ipcRenderer.on('run', function(sender, rendererGlob) {
 });
 
 function flush() {
+  console.clear();
+
   Object.keys(require.cache).forEach((function (fname) {
     if (fname.indexOf('node_modules') === -1) {
       delete require.cache[fname];
