@@ -27,7 +27,7 @@ function flush() {
       delete require.cache[fname];
     }
 
-    var mods = ['tape'];
+    var mods = ['tape', 'electron-tap'];
     mods.forEach(function (mod) {
       if (fname.indexOf(path.join(cwd, mod) + path.sep) > -1 ||
         fname.indexOf(path.join(cwd, 'node_modules', mod) + path.sep) > -1) {
