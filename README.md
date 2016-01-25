@@ -47,6 +47,7 @@ test('Dummy Component', function (t) {
   const component = ReactDOM.render(<Dummy />, container);
   const node = ReactDOM.findDOMNode(component);
 
+  // assertion fails because of paddings and box-model
   t.equal(node.offsetHeight, 60, 'control height is 60px');
 
   document.body.removeChild(container);
